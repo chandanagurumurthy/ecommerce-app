@@ -1,7 +1,7 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Fetch products
-fetch("http://localhost:5000/products")
+fetch("https://ecommerce-app-1-s5ou.onrender.com/products")
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById("product-list");
